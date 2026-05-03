@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Kumar - Software Engineer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c;
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 0;
+            position: relative;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #f7fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #3b82f6;
+            margin: 1rem auto;
+        }
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+            margin-bottom: 2rem;
+            background: white;
+        }
+        .card:hover {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .skill-badge {
+            background: #edf2f7;
+            color: #2d3748;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.25rem;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #cbd5e0;
+        }
+        .experience-card {
+            margin-bottom: 2rem;
+        }
+        .experience-card .card-header {
+            background: #f7fafc;
+            color: #2d3748;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px 8px 0 0 !important;
+        }
+        .contact-card {
+            background: #2d3748;
+            color: white;
+            border-radius: 8px;
+        }
+        .contact-card a {
+            color: #63b3ed;
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background: #3b82f6;
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background: #2563eb;
+            color: white;
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #2d3748 !important;
+        }
+        .nav-link {
+            font-weight: 500;
+            margin: 0 1rem;
+            color: #4a5568 !important;
+        }
+        .nav-link:hover {
+            color: #3b82f6 !important;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Atul Kumar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero text-center">
+        <div class="container hero-content">
+            <div class="profile-img">
+                <i class="fas fa-user fa-4x text-muted"></i>
+            </div>
+            <h1>Atul Kumar</h1>
+            <p class="mb-4">Software Engineer | Backend & Cloud Technologies Expert</p>
+            <p class="lead">Passionate about building scalable systems, data engineering, and distributed computing solutions.</p>
+            <a href="#contact" class="btn btn-custom mt-3">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center lead">Software Engineer skilled in backend and cloud technologies, with a passion for scalable systems, data engineering, and distributed computing. Experienced in automating workflows and optimizing large-scale data pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-code me-2"></i>Programming Languages</h5>
+                            <div class="mb-3">
+                                <span class="skill-badge">C++</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">Shell (Bash)</span>
+                                <span class="skill-badge">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-server me-2"></i>Back End Development</h5>
+                            <div class="mb-3">
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">Flask</span>
+                                <span class="skill-badge">Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-desktop me-2"></i>Front End Development</h5>
+                            <div class="mb-3">
+                                <span class="skill-badge">ReactJS</span>
+                                <span class="skill-badge">HTML</span>
+                                <span class="skill-badge">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-database me-2"></i>Data Pipeline</h5>
+                            <div class="mb-3">
+                                <span class="skill-badge">Apache Spark</span>
+                                <span class="skill-badge">AWS Glue</span>
+                                <span class="skill-badge">Data Warehousing</span>
+                                <span class="skill-badge">Data Modelling</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">Snowflake</span>
+                                <span class="skill-badge">Sybase IQ</span>
+                                <span class="skill-badge">P3 Procmon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-tools me-2"></i>Technologies & Tools</h5>
+                            <div class="mb-3">
+                                <span class="skill-badge">AWS</span>
+                                <span class="skill-badge">Cloud FastTrack</span>
+                                <span class="skill-badge">SkyFoundry</span>
+                                <span class="skill-badge">Terraform</span>
+                                <span class="skill-badge">CloudFormation</span>
+                                <span class="skill-badge">S3</span>
+                                <span class="skill-badge">Lambda</span>
+                                <span class="skill-badge">Route 53</span>
+                                <span class="skill-badge">Load Balancer</span>
+                                <span class="skill-badge">API Gateway</span>
+                                <span class="skill-badge">VPC</span>
+                                <span class="skill-badge">PingFederate</span>
+                                <span class="skill-badge">Elasticsearch</span>
+                                <span class="skill-badge">MongoDB</span>
+                                <span class="skill-badge">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-card">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Goldman Sachs, Bangalore</h5>
+                        <p class="mb-0">Engineering Associate | Jan 2025 - Present</p>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-primary">Country Exposure Report Uplift</h6>
+                        <ul class="mb-0">
+                            <li>Engineered a scalable, high-performance solution to meet the complex tier-1 reporting requirements of FFIEC 009 by utilizing Apache Spark 3 on AWS Glue.</li>
+                            <li>Built common libraries to standardize data processing across multiple reports, reducing development time by 75%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Goldman Sachs, Bangalore</h5>
+                        <p class="mb-0">Engineering Analyst | Jun 2022 - Dec 2024</p>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-primary">TIC B Report Uplift</h6>
+                        <ul class="mb-3">
+                            <li>Designed and implemented a versioning system that allows users to reproduce historical calculations and reports.</li>
+                            <li>Automated the entire data pipeline and report generation process, enhancing efficiency across multiple teams.</li>
+                            <li>Reduced data processing time from 12 hours to 2 hours with a scalable solution using Apache Spark 3.</li>
+                            <li>Accelerated data availability from the 13th to the 4th of the month by eliminating legacy system dependencies and building a new data model. Allowed users to analyze data well before the 15th deadline.</li>
+                        </ul>
+                        <h6 class="text-primary">TIC SLT/SHCA/SHLA Reports Uplift</h6>
+                        <ul class="mb-0">
+                            <li>Developed a comprehensive UI leveraging Kafka and near-real-time (NRT) pipelines to streamline data quality issue detection and resolution.</li>
+                            <li>Improved data availability from the 18th day of the month to the 1st by removing dependencies and implementing daily incremental processing instead of end-of-cycle batch processing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">American Express, Bangalore</h5>
+                        <p class="mb-0">Technology Intern | Jan 2021 - Jun 2021</p>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-primary">Iqlogs Natural Language Query Parser</h6>
+                        <ul class="mb-0">
+                            <li>Developed an end-to-end Natural Language Query Parser to execute queries on AMEX's Machine Learning Studio.</li>
+                            <li>Simplified the user learning process, eliminating the need for extensive prior training.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Country Exposure Report</h5>
+                            <p class="card-text">Scalable reporting solution using Apache Spark 3 on AWS Glue for FFIEC 009 compliance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">TIC Reports Uplift</h5>
+                            <p class="card-text">Automated data pipelines with versioning system and real-time processing using Kafka.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">NLP Query Parser</h5>
+                            <p class="card-text">Natural Language Query Parser for Machine Learning Studio at American Express.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">B.E. Computer Science</h5>
+                            <p class="card-text">Punjab Engineering College, Chandigarh</p>
+                            <p class="text-muted">Aug 2018 - Jun 2022</p>
+                            <span class="badge bg-primary">CGPA: 8.45/10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-school fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Class 12 (CBSE)</h5>
+                            <p class="card-text">Springdale Public School, Kurukshetra</p>
+                            <p class="text-muted">2018</p>
+                            <span class="badge bg-success">89.2%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-school fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Class 10 (CBSE)</h5>
+                            <p class="card-text">Springdale Public School, Kurukshetra</p>
+                            <p class="text-muted">2016</p>
+                            <span class="badge bg-success">CGPA: 10/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Achievements & Leadership</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Leadership in Reporting</h5>
+                            <p class="card-text">Led and managed multiple reports, including TIC-B, with complete ownership and responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Event Organization</h5>
+                            <p class="card-text">Organized technical PEC-ACM events at PECfest, enhancing student engagement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Research Contribution</h5>
+                            <p class="card-text">Contributed to the Indian-Origin Academicians Abroad DST Project as a volunteer researcher.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Let's Connect</h5>
+                            <p class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:atul.jawa857@gmail.com">atul.jawa857@gmail.com</a></p>
+                            <p class="mb-2"><i class="fas fa-phone me-2"></i>+91 85720 21225</p>
+                            <p class="mb-0"><i class="fab fa-linkedin me-2"></i><a href="https://linkedin.com/in/atul-jawa" target="_blank">linkedin.com/in/atul-jawa</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Atul Kumar. All rights reserved. | Built with passion for excellence.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98) !important';
+                navbar.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95) !important';
+                navbar.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
