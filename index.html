@@ -8,39 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover Atul Kumar's portfolio: Expert Software Engineer specializing in backend, cloud, and data engineering. Explore scalable systems, Apache Spark, AWS, and Java projects."
+      content="Atul Kumar - Software Engineer specializing in backend, cloud, and data engineering. Expert in Apache Spark, AWS, and scalable systems."
     />
     <meta
       name="keywords"
-      content="Software Engineer, Backend Developer, Cloud Engineer, Data Engineering, Apache Spark, AWS, Java, Python, Spring Boot, ReactJS"
+      content="Software Engineer, Backend Developer, Cloud Engineer, Data Engineering, Apache Spark, AWS, Java, Python"
     />
     <meta name="author" content="Atul Kumar" />
-    <!-- Google Search Console Verification - Replace with your verification code -->
-    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
     <meta
       property="og:title"
       content="Atul Kumar - Software Engineer Portfolio"
     />
     <meta
       property="og:description"
-      content="Professional portfolio of Atul Kumar showcasing backend, cloud, and data engineering experience in enterprise environments."
+      content="Professional portfolio showcasing backend, cloud, and data engineering expertise."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://akbytes.com/" />
-    <meta property="og:image" content="https://akbytes.com/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
       content="Atul Kumar - Software Engineer Portfolio"
     />
     <meta
       name="twitter:description"
-      content="Professional portfolio of Atul Kumar showcasing backend, cloud, and data engineering experience in enterprise environments."
+      content="Professional portfolio showcasing backend, cloud, and data engineering expertise."
     />
     <link rel="canonical" href="https://akbytes.com/" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="theme-color" content="#1a202c" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,6 +58,7 @@
         "image": "https://akbytes.com/og-image.png"
       }
     </script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -73,653 +70,571 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-YT6ZR7D6Q9");
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
     <style>
+      :root {
+        --text-color: #000000;
+        --bg-color: #ffffff;
+        --secondary-text: #666666;
+        --border-color: #e2e8f0;
+        --accent: #3b82f6;
+      }
+
+      body.dark-mode {
+        --text-color: #d0d0d0;
+        --bg-color: #0f0f0f;
+        --secondary-text: #999999;
+        --border-color: #2d3748;
+        --accent: #63b3ed;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
-        font-family: "Inter", sans-serif;
-        color: #1a202c;
-        line-height: 1.6;
-        background-color: #ffffff;
+        font-family: "JetBrains Mono", monospace;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        line-height: 1.5;
+        font-size: 16px;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
       }
-      .hero {
-        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-        color: white;
-        padding: 120px 0;
-        position: relative;
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
       }
-      .hero-content {
-        position: relative;
-        z-index: 1;
-      }
-      .hero h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-      .hero p {
-        font-size: 1.25rem;
-        opacity: 0.9;
-      }
-      .profile-img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: #f7fafc;
+
+      /* Header & Navigation */
+      header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        margin: 0 auto 2rem;
-        border: 4px solid white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+        padding-top: 20px;
       }
-      .section {
-        padding: 80px 0;
+
+      header h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0;
       }
-      .section-title {
-        font-size: 2.5rem;
-        font-weight: 600;
-        color: #2d3748;
-        margin-bottom: 3rem;
-        text-align: center;
-        position: relative;
+
+      nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
       }
-      .section-title::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 3px;
-        background: #3b82f6;
-        margin: 1rem auto;
-      }
-      .card {
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease;
-        margin-bottom: 2rem;
-        background: white;
-      }
-      .card:hover {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      .skill-badge {
-        background: #edf2f7;
-        color: #2d3748;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        margin: 0.25rem;
-        display: inline-block;
-        font-size: 0.9rem;
-        font-weight: 500;
-        border: 1px solid #cbd5e0;
-      }
-      .experience-card {
-        margin-bottom: 2rem;
-      }
-      .experience-card .card-header {
-        background: #f7fafc;
-        color: #2d3748;
-        border-bottom: 1px solid #e2e8f0;
-        padding: 1.5rem;
-        border-radius: 8px 8px 0 0 !important;
-      }
-      .contact-card {
-        background: #2d3748;
-        color: white;
-        border-radius: 8px;
-      }
-      .contact-card a {
-        color: #63b3ed;
+
+      nav a {
+        color: var(--text-color);
         text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
       }
-      .contact-card a:hover {
+
+      nav a:hover {
         text-decoration: underline;
       }
-      .footer {
-        background: #2d3748;
-        color: white;
-        padding: 2rem 0;
-        text-align: center;
-      }
-      .btn-custom {
-        background: #3b82f6;
+
+      .theme-toggle {
+        background: none;
         border: none;
-        color: white;
-        padding: 0.75rem 2rem;
-        border-radius: 6px;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--text-color);
+        font-family: "JetBrains Mono", monospace;
+        transition: color 0.3s ease;
+        padding: 0;
       }
-      .btn-custom:hover {
-        background: #2563eb;
-        color: white;
+
+      .theme-toggle:hover {
+        color: var(--accent);
       }
-      .navbar {
-        background: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        border-bottom: 1px solid #e2e8f0;
+
+      /* Sections */
+      section {
+        margin-bottom: 50px;
       }
-      .navbar-brand {
-        font-weight: 700;
+
+      section h2 {
         font-size: 1.5rem;
-        color: #2d3748 !important;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--border-color);
       }
-      .nav-link {
-        font-weight: 500;
-        margin: 0 1rem;
-        color: #4a5568 !important;
+
+      /* Hero Section */
+      .hero {
+        margin-top: 60px;
+        margin-bottom: 60px;
       }
-      .nav-link:hover {
-        color: #3b82f6 !important;
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
       }
+
+      .hero .subtitle {
+        font-size: 1.1rem;
+        color: var(--secondary-text);
+        margin-bottom: 15px;
+      }
+
+      .hero .description {
+        color: var(--secondary-text);
+        line-height: 1.6;
+      }
+
+      /* About Section */
+      .about p {
+        color: var(--secondary-text);
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      /* Skills Section */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .skills-column h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 15px;
+        color: var(--text-color);
+      }
+
+      .skills-column h3:first-child {
+        margin-top: 0;
+      }
+
+      .skill-badge {
+        display: inline-block;
+        background: transparent;
+        border: 1px solid var(--border-color);
+        color: var(--text-color);
+        padding: 6px 12px;
+        margin: 5px 8px 5px 0;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+      }
+
+      .skill-badge:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      /* Experience Section */
+      .experience-item {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+      }
+
+      .experience-item:hover {
+        border-color: var(--accent);
+      }
+
+      .experience-item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      .experience-meta {
+        color: var(--secondary-text);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .experience-item h4 {
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--text-color);
+      }
+
+      .experience-item ul {
+        margin-left: 20px;
+        color: var(--secondary-text);
+      }
+
+      .experience-item li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+
+      /* Education Section */
+      .education-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+      }
+
+      .education-item h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      .education-meta {
+        color: var(--secondary-text);
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+
+      .education-score {
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      /* Contact Section */
+      .contact-item {
+        margin-bottom: 12px;
+      }
+
+      .contact-item a {
+        color: var(--accent);
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .contact-item a:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        border-top: 1px solid var(--border-color);
+        color: var(--secondary-text);
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
       @media (max-width: 768px) {
-        .hero h1 {
-          font-size: 2.5rem;
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 30px;
         }
-        .section-title {
+
+        nav {
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: 15px;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        .hero h1 {
           font-size: 2rem;
+        }
+
+        section h2 {
+          font-size: 1.3rem;
+        }
+
+        main {
+          padding: 15px;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
         }
       }
     </style>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#hero">Atul Kumar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <main>
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="hero text-center"
-        aria-label="Portfolio hero section"
-      >
-        <div class="container hero-content">
-          <div
-            class="profile-img"
-            role="img"
-            aria-label="Profile placeholder for Atul Kumar"
+      <!-- Header -->
+      <header>
+        <h1>Atul Kumar</h1>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
           >
-            <i class="fas fa-user fa-4x text-muted"></i>
-          </div>
-          <h1>Atul Kumar</h1>
-          <p class="mb-4">
-            Software Engineer | Backend & Cloud Technologies Expert
-          </p>
-          <p class="lead">
-            Passionate about building scalable systems, data engineering, and
-            distributed computing solutions.
-          </p>
-          <a href="#contact" class="btn btn-custom mt-3">Get In Touch</a>
-        </div>
+            🌙
+          </button>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <p class="subtitle">Software Engineer · Backend & Cloud Technologies</p>
+        <p class="description">
+          Passionate about building scalable systems, data engineering, and
+          distributed computing solutions. Specialized in Apache Spark, AWS, and
+          enterprise backend systems.
+        </p>
       </section>
 
       <!-- About Section -->
-      <section id="about" class="section">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <p class="text-center lead">
-                Software Engineer skilled in backend and cloud technologies,
-                with a passion for scalable systems, data engineering, and
-                distributed computing. Experienced in automating workflows and
-                optimizing large-scale data pipelines.
-              </p>
-            </div>
-          </div>
+      <section id="about">
+        <h2>About</h2>
+        <div class="about">
+          <p>
+            Software Engineer with expertise in backend and cloud technologies.
+            Experienced in designing and implementing scalable data pipelines,
+            optimizing workflows, and building robust enterprise systems.
+            Currently an Engineering Associate at Goldman Sachs.
+          </p>
+          <p>
+            Passionate about solving complex technical problems, automating
+            processes, and contributing to high-impact projects. Strong
+            foundation in distributed systems, data engineering, and cloud
+            architecture.
+          </p>
         </div>
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Skills & Expertise</h2>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    <i class="fas fa-code me-2"></i>Programming Languages
-                  </h5>
-                  <div class="mb-3">
-                    <span class="skill-badge">C++</span>
-                    <span class="skill-badge">Java</span>
-                    <span class="skill-badge">Shell (Bash)</span>
-                    <span class="skill-badge">Python</span>
-                  </div>
-                </div>
-              </div>
+      <section id="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skills-column">
+            <h3>Languages</h3>
+            <div>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Shell/Bash</span>
             </div>
-            <div class="col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    <i class="fas fa-server me-2"></i>Back End Development
-                  </h5>
-                  <div class="mb-3">
-                    <span class="skill-badge">Java</span>
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">Flask</span>
-                    <span class="skill-badge">Spring Boot</span>
-                  </div>
-                </div>
-              </div>
+
+            <h3>Backend</h3>
+            <div>
+              <span class="skill-badge">Spring Boot</span>
+              <span class="skill-badge">Flask</span>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    <i class="fas fa-desktop me-2"></i>Front End Development
-                  </h5>
-                  <div class="mb-3">
-                    <span class="skill-badge">ReactJS</span>
-                    <span class="skill-badge">HTML</span>
-                    <span class="skill-badge">CSS</span>
-                  </div>
-                </div>
-              </div>
+
+          <div class="skills-column">
+            <h3>Data & Cloud</h3>
+            <div>
+              <span class="skill-badge">Apache Spark</span>
+              <span class="skill-badge">AWS Glue</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Snowflake</span>
             </div>
-            <div class="col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    <i class="fas fa-database me-2"></i>Data Pipeline
-                  </h5>
-                  <div class="mb-3">
-                    <span class="skill-badge">Apache Spark</span>
-                    <span class="skill-badge">AWS Glue</span>
-                    <span class="skill-badge">Data Warehousing</span>
-                    <span class="skill-badge">Data Modelling</span>
-                    <span class="skill-badge">SQL</span>
-                    <span class="skill-badge">Snowflake</span>
-                    <span class="skill-badge">Sybase IQ</span>
-                    <span class="skill-badge">P3 Procmon</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    <i class="fas fa-tools me-2"></i>Technologies & Tools
-                  </h5>
-                  <div class="mb-3">
-                    <span class="skill-badge">AWS</span>
-                    <span class="skill-badge">Cloud FastTrack</span>
-                    <span class="skill-badge">SkyFoundry</span>
-                    <span class="skill-badge">Terraform</span>
-                    <span class="skill-badge">CloudFormation</span>
-                    <span class="skill-badge">S3</span>
-                    <span class="skill-badge">Lambda</span>
-                    <span class="skill-badge">Route 53</span>
-                    <span class="skill-badge">Load Balancer</span>
-                    <span class="skill-badge">API Gateway</span>
-                    <span class="skill-badge">VPC</span>
-                    <span class="skill-badge">PingFederate</span>
-                    <span class="skill-badge">Elasticsearch</span>
-                    <span class="skill-badge">MongoDB</span>
-                    <span class="skill-badge">Docker</span>
-                  </div>
-                </div>
-              </div>
+
+            <h3>Tools</h3>
+            <div>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Kafka</span>
+              <span class="skill-badge">Terraform</span>
+              <span class="skill-badge">Git</span>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Experience Section -->
-      <section id="experience" class="section">
-        <div class="container">
-          <h2 class="section-title">Professional Experience</h2>
-          <div class="experience-card">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">Goldman Sachs, Bangalore</h5>
-                <p class="mb-0">Engineering Associate | Jan 2025 - Present</p>
-              </div>
-              <div class="card-body">
-                <h6 class="text-primary">Country Exposure Report Uplift</h6>
-                <ul class="mb-0">
-                  <li>
-                    Engineered a scalable, high-performance solution to meet the
-                    complex tier-1 reporting requirements of FFIEC 009 by
-                    utilizing Apache Spark 3 on AWS Glue.
-                  </li>
-                  <li>
-                    Built common libraries to standardize data processing across
-                    multiple reports, reducing development time by 75%.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="experience-card">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">Goldman Sachs, Bangalore</h5>
-                <p class="mb-0">Engineering Analyst | Jun 2022 - Dec 2024</p>
-              </div>
-              <div class="card-body">
-                <h6 class="text-primary">TIC B Report Uplift</h6>
-                <ul class="mb-3">
-                  <li>
-                    Designed and implemented a versioning system that allows
-                    users to reproduce historical calculations and reports.
-                  </li>
-                  <li>
-                    Automated the entire data pipeline and report generation
-                    process, enhancing efficiency across multiple teams.
-                  </li>
-                  <li>
-                    Reduced data processing time from 12 hours to 2 hours with a
-                    scalable solution using Apache Spark 3.
-                  </li>
-                  <li>
-                    Accelerated data availability from the 13th to the 4th of
-                    the month by eliminating legacy system dependencies and
-                    building a new data model. Allowed users to analyze data
-                    well before the 15th deadline.
-                  </li>
-                </ul>
-                <h6 class="text-primary">TIC SLT/SHCA/SHLA Reports Uplift</h6>
-                <ul class="mb-0">
-                  <li>
-                    Developed a comprehensive UI leveraging Kafka and
-                    near-real-time (NRT) pipelines to streamline data quality
-                    issue detection and resolution.
-                  </li>
-                  <li>
-                    Improved data availability from the 18th day of the month to
-                    the 1st by removing dependencies and implementing daily
-                    incremental processing instead of end-of-cycle batch
-                    processing.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="experience-card">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">American Express, Bangalore</h5>
-                <p class="mb-0">Technology Intern | Jan 2021 - Jun 2021</p>
-              </div>
-              <div class="card-body">
-                <h6 class="text-primary">
-                  Iqlogs Natural Language Query Parser
-                </h6>
-                <ul class="mb-0">
-                  <li>
-                    Developed an end-to-end Natural Language Query Parser to
-                    execute queries on AMEX's Machine Learning Studio.
-                  </li>
-                  <li>
-                    Simplified the user learning process, eliminating the need
-                    for extensive prior training.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="experience">
+        <h2>Professional Experience</h2>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Featured Projects</h2>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">Country Exposure Report</h5>
-                  <p class="card-text">
-                    Scalable reporting solution using Apache Spark 3 on AWS Glue
-                    for FFIEC 009 compliance.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">TIC Reports Uplift</h5>
-                  <p class="card-text">
-                    Automated data pipelines with versioning system and
-                    real-time processing using Kafka.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">NLP Query Parser</h5>
-                  <p class="card-text">
-                    Natural Language Query Parser for Machine Learning Studio at
-                    American Express.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="experience-item">
+          <h3>Engineering Associate</h3>
+          <div class="experience-meta">
+            Goldman Sachs, Bangalore · Jan 2025 - Present
           </div>
+
+          <h4>Country Exposure Report Uplift</h4>
+          <ul>
+            <li>
+              Engineered scalable solution for FFIEC 009 tier-1 reporting using
+              Apache Spark 3 on AWS Glue
+            </li>
+            <li>
+              Built common libraries standardizing data processing, reducing dev
+              time by 75%
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Engineering Analyst</h3>
+          <div class="experience-meta">
+            Goldman Sachs, Bangalore · Jun 2022 - Dec 2024
+          </div>
+
+          <h4>TIC B Report Uplift</h4>
+          <ul>
+            <li>
+              Designed versioning system enabling reproduction of historical
+              calculations
+            </li>
+            <li>
+              Reduced data processing time from 12 hours to 2 hours using Apache
+              Spark 3
+            </li>
+            <li>
+              Accelerated data availability from 13th to 4th of month, meeting
+              15th deadline
+            </li>
+          </ul>
+
+          <h4>TIC SLT/SHCA/SHLA Reports Uplift</h4>
+          <ul>
+            <li>
+              Developed UI leveraging Kafka and near-real-time pipelines for
+              data quality detection
+            </li>
+            <li>
+              Improved data availability from 18th to 1st by implementing daily
+              incremental processing
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Technology Intern</h3>
+          <div class="experience-meta">
+            American Express, Bangalore · Jan 2021 - Jun 2021
+          </div>
+
+          <h4>Iqlogs Natural Language Query Parser</h4>
+          <ul>
+            <li>
+              Developed end-to-end NLP Query Parser for Machine Learning Studio
+            </li>
+            <li>
+              Simplified user learning process, eliminating extensive training
+              requirements
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Education Section -->
-      <section id="education" class="section">
-        <div class="container">
-          <h2 class="section-title">Education</h2>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">B.E. Computer Science</h5>
-                  <p class="card-text">
-                    Punjab Engineering College, Chandigarh
-                  </p>
-                  <p class="text-muted">Aug 2018 - Jun 2022</p>
-                  <span class="badge bg-primary">CGPA: 8.45/10</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-school fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">Class 12 (CBSE)</h5>
-                  <p class="card-text">Springdale Public School, Kurukshetra</p>
-                  <p class="text-muted">2018</p>
-                  <span class="badge bg-success">89.2%</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-school fa-3x text-primary mb-3"></i>
-                  <h5 class="card-title">Class 10 (CBSE)</h5>
-                  <p class="card-text">Springdale Public School, Kurukshetra</p>
-                  <p class="text-muted">2016</p>
-                  <span class="badge bg-success">CGPA: 10/10</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="education">
+        <h2>Education</h2>
 
-      <!-- Achievements Section -->
-      <section id="achievements" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Achievements & Leadership</h2>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
-                  <h5 class="card-title">Leadership in Reporting</h5>
-                  <p class="card-text">
-                    Led and managed multiple reports, including TIC-B, with
-                    complete ownership and responsibility.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-users fa-3x text-warning mb-3"></i>
-                  <h5 class="card-title">Event Organization</h5>
-                  <p class="card-text">
-                    Organized technical PEC-ACM events at PECfest, enhancing
-                    student engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
-                  <h5 class="card-title">Research Contribution</h5>
-                  <p class="card-text">
-                    Contributed to the Indian-Origin Academicians Abroad DST
-                    Project as a volunteer researcher.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="education-item">
+          <h3>B.E. Computer Science</h3>
+          <div class="education-meta">
+            Punjab Engineering College, Chandigarh · Aug 2018 - Jun 2022
           </div>
+          <div class="education-score">CGPA: 8.45/10</div>
+        </div>
+
+        <div class="education-item">
+          <h3>Class 12 (CBSE)</h3>
+          <div class="education-meta">
+            Springdale Public School, Kurukshetra · 2018
+          </div>
+          <div class="education-score">Score: 89.2%</div>
+        </div>
+
+        <div class="education-item">
+          <h3>Class 10 (CBSE)</h3>
+          <div class="education-meta">
+            Springdale Public School, Kurukshetra · 2016
+          </div>
+          <div class="education-score">CGPA: 10/10</div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="card contact-card">
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-4">Let's Connect</h5>
-                  <p class="mb-2">
-                    <i class="fas fa-envelope me-2"></i
-                    ><a href="mailto:atul.jawa857@gmail.com"
-                      >atul.jawa857@gmail.com</a
-                    >
-                  </p>
-                  <p class="mb-2">
-                    <i class="fas fa-phone me-2"></i>+91 85720 21225
-                  </p>
-                  <p class="mb-0">
-                    <i class="fab fa-linkedin me-2"></i
-                    ><a href="https://linkedin.com/in/atul-jawa" target="_blank"
-                      >linkedin.com/in/atul-jawa</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <a href="mailto:atul.jawa857@gmail.com">atul.jawa857@gmail.com</a>
+        </div>
+        <div class="contact-item"><strong>Phone:</strong> +91 85720 21225</div>
+        <div class="contact-item">
+          <strong>LinkedIn:</strong>
+          <a href="https://linkedin.com/in/atul-jawa" target="_blank"
+            >linkedin.com/in/atul-jawa</a
+          >
+        </div>
+        <div class="contact-item">
+          <strong>GitHub:</strong>
+          <a href="https://github.com/AtulKumar2009" target="_blank"
+            >github.com/AtulKumar2009</a
+          >
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2026 Atul Kumar. All rights reserved.</p>
+      </footer>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p class="mb-0">
-          &copy; 2026 Atul Kumar. All rights reserved. | Built with passion for
-          excellence.
-        </p>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Smooth scrolling for navigation links
+      // Dark mode toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const htmlElement = document.documentElement;
+
+      // Check for saved theme preference or default to dark mode
+      const currentTheme = localStorage.getItem("theme") || "dark";
+      if (currentTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.textContent = "☀️";
+      }
+
+      // Toggle dark mode
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDarkMode = document.body.classList.contains("dark-mode");
+        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        themeToggle.textContent = isDarkMode ? "☀️" : "🌙";
+      });
+
+      // Smooth scroll for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
+          const href = this.getAttribute("href");
+          if (href !== "#" && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
               behavior: "smooth",
               block: "start",
             });
           }
         });
-      });
-
-      // Navbar background change on scroll
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-          navbar.style.background = "rgba(255, 255, 255, 0.98) !important";
-          navbar.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
-        } else {
-          navbar.style.background = "rgba(255, 255, 255, 0.95) !important";
-          navbar.style.boxShadow = "0 1px 3px rgba(0,0,0,0.1)";
-        }
       });
     </script>
   </body>
