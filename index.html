@@ -296,6 +296,28 @@
         line-height: 1.6;
       }
 
+      .hero-cta {
+        margin-top: 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        color: var(--accent);
+        background: transparent;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .hero-cta:hover {
+        background: var(--accent);
+        color: var(--bg-color);
+      }
+
       /* About Section */
       .about p {
         color: var(--secondary-text);
@@ -486,6 +508,13 @@
           <a href="#education">Education</a>
           <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
+          <a
+            href="/Atul_Kumar_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            download
+            >Resume</a
+          >
           <button
             class="theme-toggle"
             id="themeToggle"
@@ -508,6 +537,16 @@
           Apache Spark systems processing millions of records and server-side
           streaming APIs sustaining tens of thousands of records per second.
         </p>
+        <a
+          class="hero-cta"
+          href="/Atul_Kumar_Resume.pdf"
+          target="_blank"
+          rel="noopener"
+          download
+          aria-label="Download Atul Kumar's resume (PDF)"
+        >
+          ↓ Download Resume (PDF)
+        </a>
       </section>
 
       <!-- About Section -->
@@ -846,6 +885,16 @@
             target="_blank"
             rel="me noopener"
             >github.com/AtulKumar2009</a
+          >
+        </div>
+        <div class="contact-item">
+          <strong>Resume:</strong>
+          <a
+            href="/Atul_Kumar_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            download
+            >Download PDF</a
           >
         </div>
       </section>
